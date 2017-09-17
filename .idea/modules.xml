@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KitchenAid.iml" filepath="$PROJECT_DIR$/KitchenAid.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kitchenaidtools/kitchenaidtools.iml" filepath="$PROJECT_DIR$/kitchenaidtools/kitchenaidtools.iml" />
     </modules>
   </component>
 </project>
