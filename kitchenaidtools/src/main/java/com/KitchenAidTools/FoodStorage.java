@@ -11,94 +11,48 @@ public abstract class FoodStorage {
     private boolean isMain;
     private ArrayList<Item> Foodstuffs;
 
-    /**
-     *
-     * @return
-     */
     protected String getName() {
         return Name;
     }
 
-    /**
-     *
-     * @param name
-     */
     protected void setName(String name) {
         Name = name;
     }
 
-    /**
-     *
-     * @return
-     */
     protected String getLocation() {
         return Location;
     }
 
-    /**
-     *
-     * @param location
-     */
     protected void setLocation(String location) {
         Location = location;
     }
 
-    /**
-     *
-     * @return
-     */
     protected boolean isMain() {
         return isMain;
     }
 
-    /**
-     *
-     * @param main
-     */
     protected void setMain(boolean main) {
         isMain = main;
     }
 
-    /**
-     * @Description
-     * This creates a shopping list to display on phone while user is at the store
-     *
-     * @return
-     */
-    protected ArrayList MakeShoppingList(){
+    protected ArrayList makeShoppingList(){
 
         return new ArrayList();
     }
 
-    /**
-     *
-     */
-    protected void CreateNewFoodStorage(){
+    protected void createNewFoodStorage(){
         this.Foodstuffs = new ArrayList<>();
     }
 
-    /**
-     * @Description
-     * This is to add an item to the users fridge
-     *
-     */
-    protected void AddItem(Item newItem){
+    public void addItem(Item newItem){
         this.Foodstuffs.add(newItem);
     }
 
-    /**
-     *
-     * 
-     */
-    protected void RemoveItem(Item toRemove){
+    public void removeItem(Item toRemove){
         this.Foodstuffs.remove(toRemove);
     }
 
-    /**
-     *
-     * @return
-     */
-    protected ArrayList SortByPurchase(){
+    protected ArrayList sortByPurchase(){
         return new ArrayList();
     }
 

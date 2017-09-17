@@ -8,7 +8,7 @@ public class FridgeImpl extends FoodStorage {
         setName(Name);
         setLocation(Location);
         setMain(isMain);
-        CreateNewFoodStorage();
+        createNewFoodStorage();
     }
 
     public void Fridge(){
@@ -16,6 +16,6 @@ public class FridgeImpl extends FoodStorage {
         setName(myFridge);
         setLocation(myFridge);
         setMain(true);
-        CreateNewFoodStorage();
+        createNewFoodStorage();
     }
 }

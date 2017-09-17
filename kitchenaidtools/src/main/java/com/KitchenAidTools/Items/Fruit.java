@@ -9,7 +9,7 @@ import java.util.Calendar;
 
 class Fruit extends Item {
     Fruit(){
-        setPurchaseDate(Calendar.getInstance());
+        setItemPurchaseDate(Calendar.getInstance());
     }
 
 }

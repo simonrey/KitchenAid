@@ -12,7 +12,7 @@ public class PantryImpl extends FoodStorage{
         setName(Name);
         setLocation(Location);
         setMain(isMain);
-        CreateNewFoodStorage();
+        createNewFoodStorage();
     }
 
     public PantryImpl(){
@@ -20,7 +20,7 @@ public class PantryImpl extends FoodStorage{
         setLocation(myPantry);
         setName(myPantry);
         setMain(true);
-        CreateNewFoodStorage();
+        createNewFoodStorage();
     }
 
 

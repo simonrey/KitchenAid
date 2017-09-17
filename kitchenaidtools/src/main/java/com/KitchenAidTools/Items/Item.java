@@ -1,7 +1,7 @@
 package com.KitchenAidTools.Items;
+import com.KitchenAidTools.FoodStorage;
 
 import java.util.Calendar;
-import java.util.Date;
 
 /**
  * Created by simon on 9/16/2017.
@@ -9,37 +9,28 @@ import java.util.Date;
 
 public abstract class Item implements ItemInt {
 
-    private Calendar purchaseDate;
+    private Calendar itemPurchaseDate;
     private String itemName;
-    private int quantityPurchased;
+    private int itemQuantityPurchased;
 
     @Override
-    public void setPurchaseDate(Calendar instance) {
-        this.purchaseDate = instance;
-    }
+    public void setItemPurchaseDate(Calendar instance) {this.itemPurchaseDate = instance;}
 
     @Override
-    public void setName() {
-
-    }
+    public void setItemName(String name) {this.itemName = name;}
 
     @Override
-    public void setQuantityPurchased() {
-
-    }
+    public void setItemQuantityPurchased(int quantityPurchased) {this.itemQuantityPurchased = quantityPurchased;}
 
     @Override
-    public Date getPurchaseDate() {
-        return null;
-    }
+    public Calendar getItemPurchaseDate() {return this.itemPurchaseDate;}
 
     @Override
-    public String getName() {
-        return null;
-    }
+    public String getItemName() {return this.itemName;}
 
     @Override
-    public int getQuantityPurchased() {
-        return 0;
-    }
+    public int getItemQuantityPurchased() {return this.itemQuantityPurchased;}
+
+    @Override
+    public void addToStorage(FoodStorage foodStorage) {foodStorage.addItem(this);}
 }

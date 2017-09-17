@@ -8,7 +8,7 @@ import java.util.Calendar;
 
 class Snack extends Item {
     Snack(){
-        setPurchaseDate(Calendar.getInstance());
+        setItemPurchaseDate(Calendar.getInstance());
     }
 
 }

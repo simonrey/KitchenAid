@@ -4,7 +4,7 @@ import java.util.Calendar;
 
 class Vegetable extends Item{
     Vegetable(){
-        setPurchaseDate(Calendar.getInstance());
+        setItemPurchaseDate(Calendar.getInstance());
     }
 
 }

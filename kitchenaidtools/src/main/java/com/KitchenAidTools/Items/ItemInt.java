@@ -1,16 +1,19 @@
 package com.KitchenAidTools.Items;
 
 
+import com.KitchenAidTools.FoodStorage;
+
 import java.util.Calendar;
-import java.util.Date;
 
 interface ItemInt{
 
-    void setPurchaseDate(Calendar instance);
-    void setName();
-    void setQuantityPurchased();
-    Date getPurchaseDate();
-    String getName();
-    int getQuantityPurchased();
+    void setItemPurchaseDate(Calendar instance);
+    void setItemName(String name);
+    void setItemQuantityPurchased(int quantityPurchased);
+    Calendar getItemPurchaseDate();
+    String getItemName();
+    int getItemQuantityPurchased();
+
+    public void addToStorage(FoodStorage foodStorage);
 
 }
